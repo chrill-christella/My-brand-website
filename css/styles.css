@@ -73,10 +73,6 @@ img {
   margin: 2rem;
 }
 
-/* Start signin */
-
-/* Start signin */
-
 /* sidebar */
 
 .sidebar {
@@ -471,9 +467,16 @@ th {
   .main--content.active {
     width: calc(100% - 85px);
   }
+  .table {
+    width: 300px;
+    padding: 0px 50px;
+  }
 }
 
 @media screen and (max-width: 590px) {
+  .main--content {
+    width: 40%;
+  }
   .search,
   .lock,
   .chat {
@@ -486,7 +489,7 @@ th {
     width: fit-content;
   }
   .sidebar {
-    transform: translateX(-100%);
+    width: 30%;
     z-index: 10;
     background-color: #fff;
   }
@@ -497,11 +500,19 @@ th {
   .sidebar.active .sidebar--item {
     display: block;
   }
+  .sidebar--items a,
+  .sidebar--bottom-items a {
+    font-size: 0.5rem;
+  }
+
   .main--content {
-    width: calc(100% - 0px);
+    width: calc(100% - 100px);
   }
   .main--content.active {
     width: calc(100% - 0px);
+  }
+  .icon-1 {
+    display: none;
   }
 }
 

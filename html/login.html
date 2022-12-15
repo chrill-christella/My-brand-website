@@ -2,7 +2,7 @@
 <head>
     <title>login</title>
     <link rel="stylesheet" href="./../css/login/styles.css">
-    
+    <script defer src="./../js/login-script.js"></script>
     <script src="https://code.iconify.design/iconify-icon/1.0.2/iconify-icon.min.js"></script>
 </a>
 </head>
@@ -15,16 +15,19 @@
                     <iconify-icon icon="material-symbols:arrow-back" style="color: black;" width="50" height="50"></iconify-icon>
         </a>
         </div>
-            <form >
+
+            <form  id= "form" action="/" method="POST" >
+                <div id="error"></div>
                 <label for="chk" aria-hidden="true">Log in</label>
-                <input type="text" name="txt" placeholder="User name" >
-                <input type="password" name="pswd" placeholder="Password" >
-                <a href="./dashboard.html"class="button">Log in</a>
+                <input id="username" type="text" name="txt" placeholder="Email"  >
+                <input id="password" type="password" name="pswd" placeholder="Password"  >
+                
+                <button type="submit" class="button">Log in</button>
             </form>
             
         </div>
     
     </div>
-    
+   
 </body>
 </html>

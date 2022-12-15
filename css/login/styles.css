@@ -52,9 +52,10 @@ input {
   border-radius: 5px;
 }
 .button {
-  width: 60%;
+  width: 40%;
   height: 30px;
   margin: 10px auto;
+  align-items: center;
   justify-content: center;
   display: flex;
   color: #fff;
@@ -70,6 +71,16 @@ input {
 }
 button:hover {
   background: #2b2929;
+}
+#error {
+  font-size: 1rem;
+  color: red;
+  text-align: center;
+}
+.title_error {
+  font-size: 1rem;
+  color: red;
+  text-align: center;
 }
 .icon {
   display: inline-block;
@@ -92,4 +103,9 @@ button:hover {
 }
 .back {
   margin: 2rem;
+}
+.description_error {
+  font-size: 1rem;
+  color: red;
+  text-align: center;
 }
