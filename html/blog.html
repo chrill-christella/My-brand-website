@@ -3,6 +3,8 @@
     <title></title>
     <link rel="stylesheet" href="./../css/style.css">
     <script src="https://code.iconify.design/iconify-icon/1.0.2/iconify-icon.min.js"></script>
+        <!-- Swiper CSS -->
+        <link rel="stylesheet" href="./css/swiper-bundle.min.css" />
 </head>
 <body>
 
@@ -21,9 +23,9 @@
             <div class="bar"></div>
           </div>
           <ul>
-            <li><a href="./../index.html" data-after="Home">Home</a></li>
+            <li><a href="./../index.html">Home</a></li>
        
-            <li><a href="./login.html" class="login-button" data-after="SignUp">login</a></li>
+            <li><a href="./login.html" class="login-button" >login</a></li>
           </ul>
         </div>
       </div>
@@ -38,8 +40,8 @@
         <h1 class="heading">BLOGS</h1>
 
         <div class="box-container">
-
-            <div class="box shadow">
+            <div class="slide-container swiper">
+            <!-- <div class="box shadow">
 
                 <div class="image">
                     <img src="./../img/img-1.png" alt="">
@@ -122,13 +124,14 @@
                     <a href="./viewblog.html" class="btn">read more</a>
                 </div>
 
-            </div>
+            </div> -->
             
         </div>
     </div>
     
 </section>
   <!-- End of blog -->
-  
+  <script src="../js/blog.js"></script>
+  <script src="./../js/app.js"></script>
 </body>
 </html>

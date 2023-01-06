@@ -1,72 +1,101 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./../css/styles.css">
-    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./../css/styles.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
     <title>User Messages</title>
-</head>
-<body>
+  </head>
+  <body>
     <section class="header">
-        <div class="logo">
-            <!-- <i class="ri-menu-line icon icon-0 menu"></i> -->
-            <h1>CHRIS<span>TELLA</span> </h1>
-        </div>
-        
+      <div class="logo">
+        <!-- <i class="ri-menu-line icon icon-0 menu"></i> -->
+        <h1>CHRIS<span>TELLA</span></h1>
+      </div>
     </section>
     <section class="main">
-        <div class="sidebar">
-            <ul class="sidebar--items">
-                <li>
-                    <a href="./dashboard.html">
-                        <span class="icon icon-1"><i class="ri-layout-grid-line"></i></span>
-                        <span class="sidebar--item">Dashboard</span>
-                    </a>
-                </li>
-                <li>
+      <div class="sidebar">
+        <ul class="sidebar--items">
+          <li>
+            <a href="./dashboard.html">
+              <span class="icon icon-1"
+                ><i class="ri-layout-grid-line"></i
+              ></span>
+              <span class="sidebar--item">Dashboard</span>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <!-- <span class="icon icon-2"><i class="ri-line-chart-line"></i></span> -->
+              <span class="sidebar--item">Edit Portfolio</span>
+            </a>
+          </li>
+          <li>
+            <a href="./usermessages.html" id="active--link user-queries">
+              <!-- <span class="icon icon-4"><i class="ri-line-chart-line"></i></span> -->
+              <span class="sidebar--item">User messages</span>
+            </a>
+          </li>
+          <li>
+            <a href="./addskills.html">
+              <!-- <span class="icon icon-3"><i class="ri-line-chart-line"></i></span> -->
+              <span class="sidebar--item">Add Skills</span>
+            </a>
+          </li>
+          <li>
+            <a href="./addblog.html">
+              <!-- <span class="icon icon-4"><i class="ri-line-chart-line"></i></span> -->
+              <span class="sidebar--item">Add Blog</span>
+            </a>
+          </li>
+        </ul>
+        <ul class="sidebar--bottom-items">
+          <!-- <li>
                     <a href="#">
-                        <!-- <span class="icon icon-2"><i class="ri-line-chart-line"></i></span> -->
-                        <span class="sidebar--item">Edit Portfolio</span>
+                        <span class="icon icon-7"><i class="ri-settings-3-line"></i></span>
+                        <span class="sidebar--item">Settings</span>
                     </a>
-                </li> 
-                <li>
-                    <a href="./usermessages.html" id="active--link">
-                        <!-- <span class="icon icon-4"><i class="ri-line-chart-line"></i></span> -->
-                        <span class="sidebar--item">User messages</span>
-                    </a>
-                </li> 
-                
-                <li>
-                    <a href="./addblog.html">
-                        <!-- <span class="icon icon-4"><i class="ri-line-chart-line"></i></span> -->
-                        <span class="sidebar--item">Add Blog</span>
-                    </a>
-                </li>                
-            </ul>
-            <ul class="sidebar--bottom-items">
-                <li>
-                    <a href="./../index.html">
-                        <span class="icon icon-5"><i class="ri-logout-box-r-line"></i></span>
-                        <span class="sidebar--item">Logout</span>
-                    </a>
-                </li>
-            </ul>
+                </li> -->
+          <li>
+            <a href="./../index.html">
+              <span class="icon icon-5"
+                ><i class="ri-logout-box-r-line"></i
+              ></span>
+              <span class="sidebar--item">Logout</span>
+            </a>
+          </li>
+        </ul>
+      </div>
+
+      <div class="main--content">
+        <!-- Start Message  -->
+        <div class="recent--blogs">
+          <div class="title">
+            <h2 class="section--title">User Messages</h2>
+            <!-- <button class="add"><i class="ri-add-line"></i>Add Blog</button> -->
+          </div>
+          <div class="table">
+            <table>
+              <thead>
+                <tr>
+                  <th>Name</th>
+                  <th>Email</th>
+                  <th>Messages</th>
+                </tr>
+              </thead>
+              <tbody></tbody>
+            </table>
+          </div>
         </div>
 
-        <div class="main--content">            
-            <!-- Start Message  -->
-            <div class="recent--blogs">
-                <div class="title">
-                    <h2 class="section--title">User Messages</h2>
-                    <!-- <button class="add"><i class="ri-add-line"></i>Add Blog</button> -->
-                </div>
-              
-
-        </div>
+        <!-- End Blog  -->
+      </div>
     </section>
-    <script src="./../js/main.js"></script>
-    
-</body>
+    <script src="./../js/contact-local-storage.js"></script>
+  </body>
 </html>

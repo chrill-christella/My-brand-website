@@ -31,7 +31,12 @@
                         <span class="sidebar--item">Edit Portfolio</span>
                     </a>
                 </li> 
-               
+                <li>
+                    <a href="./usermessages.html">
+                      <!-- <span class="icon icon-4"><i class="ri-line-chart-line"></i></span> -->
+                      <span class="sidebar--item">User messages</span>
+                    </a>
+                  </li>
                 <li>
                     <a href="./addskills.html" >
                         <!-- <span class="icon icon-3"><i class="ri-line-chart-line"></i></span> -->
@@ -78,12 +83,11 @@
                         <textarea name="editor1" id="description" cols="60" rows="20"></textarea><br>
                         <div class="description_error"></div>
                         
-                        <input type="text" class="file_input_textbox" readonly="readonly" value='No File Selected'>
                             <div class="file_input_div">
-                                <input type="button" value="Browse" class="file_input_button" />
-                                <input type="file" name="uploaded_file" class="file_input_hidden"/>
+                                
+                                <input type="file" name="picture" id="picture" class="custom-file-input" >
                             </div>
-                            <button type="submit" class="add"></i>Add Blog</button>    
+                            <button type="submit" class="add"></i>create Blog</button>    
                     </form>
                 </div>
             </div>
@@ -93,9 +97,12 @@
         </div>
     </section>
     <script src="./../js/blog-validation.js"></script>
-    <script>
+    <script src="./../js/addblog.js"></script>
+    
+    <!-- <script>
         CKEDITOR.replace('editor1')
-    </script>
+    </script> -->
+
 </body>
 
 </html>

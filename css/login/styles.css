@@ -77,7 +77,9 @@ button:hover {
   color: red;
   text-align: center;
 }
-.title_error {
+.email_error,
+.password_error,
+.tittle_error {
   font-size: 1rem;
   color: red;
   text-align: center;

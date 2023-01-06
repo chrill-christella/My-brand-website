@@ -49,25 +49,37 @@
                         Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eaque, odit!
                         Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eaque, odit!
                     </p>
-                    <iconify-icon icon="mdi:cards-heart-outline" width="20" height="20"></iconify-icon>
-                    likes
-                    <a href="#comment-card">
+                    <div class="publishing-details">
+                      <div class="published-date" id="published-date">
+                       
+                      </div>
+                    <div class="likes">
+                    <button id="like">
+                      <iconify-icon icon="flat-color-icons:like"></iconify-icon>
+                    </button>
+                    <input type="number" id="input1" value="0" />
+                    <button id="like">
                     <iconify-icon icon="uil:comment" width="20" height="20"></iconify-icon>
-                    comment
-                  </a>
+                  </button>
+                    <input type="number" id="input2" value="0" />
+                  
                 </div>
+                <form  id="blog-c"action="#" method="post">
+                <div class="comments-blog">
                   <label for="comment">Add your comment</label>
                   <textarea name="comment" id="comment" cols="60" rows="10"></textarea>
-                   <div>
-                    <a href="#" class="add ">Submit</a>
-                   </div>
+                  <div class="description_error"></div>
+                  <button type="submit" class="button">Submit</button>
+                </form>
           </div>
          
   </div>
   
         <!-- <a href="blog.html" class="btn back">Back</a> -->
-      
+        <script src="./../js/singleblog.js" defer></script>
 <script src="./../js/index.js"></script>
+
+
   <!-- End of blog  -->
   
 </body>
