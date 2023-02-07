@@ -878,6 +878,15 @@ textarea {
   font-size: 18px;
   cursor: pointer;
 }
+#published-date {
+  width: 190px;
+  margin: 10px -40px;
+  left: 0;
+}
+#published-date input {
+  background: none;
+  border: none;
+}
 
 /* End of Blog */
 

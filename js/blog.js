@@ -29,6 +29,9 @@ const renderArticles = (articles) => {
     content.setAttribute("class", "content");
     const h3Content = document.createElement("h3");
     h3Content.textContent = article.title;
+    const date = document.createElement("div");
+    date.setAttribute("class", "published-date");
+    date.appendChild(date);
     const p = document.createElement("p");
     p.textContent = article.description;
     const anchor = document.createElement("a");

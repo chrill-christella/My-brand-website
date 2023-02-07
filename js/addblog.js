@@ -26,6 +26,7 @@ if (articleId.length !== 0) {
   data = foundArticle.length !== 0 ? foundArticle[0] : undefined;
   document.querySelector(".blog-title").value = data.title;
   document.querySelector("#description").value = data.description;
+  document.querySelector("#published-date").value = data.date;
   imageUrl = data.picture;
 }
 articleId.length !== 0
@@ -64,6 +65,7 @@ document.querySelector("#add-blog").addEventListener("submit", (e) => {
     id: isInEditMode ? data.id : self.crypto.randomUUID(),
     title: e.target.elements["title"].value,
     description: e.target.elements["description"].value,
+    date: e.target.elements["published-date"].value,
     picture: imageUrl,
     comments: isInEditMode ? data.comments : [],
     likes: 0,
@@ -84,6 +86,7 @@ document.querySelector("#add-blog").addEventListener("submit", (e) => {
   }
   e.target.elements["title"].value = "";
   e.target.elements["description"].value = "";
+  e.target.elements["published-date"].value = "";
   e.target.elements["picture"].value = "";
 });
 
