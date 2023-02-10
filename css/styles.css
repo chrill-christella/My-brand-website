@@ -350,17 +350,19 @@ a {
 
 table {
   width: 100%;
-  /* text-align: left; */
+  text-align: left;
   border-collapse: collapse;
 }
 
 tr {
   border-bottom: 1px solid #f1f1f1;
+  border-spacing: 20px;
 }
 
 td,
 th {
   padding-block: 10px;
+  border-spacing: 10px;
 }
 
 td {

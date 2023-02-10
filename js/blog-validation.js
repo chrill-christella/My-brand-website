@@ -4,8 +4,6 @@ document.querySelector("#add-blog").addEventListener("submit", (event) => {
   event.preventDefault();
   const title = event.target.elements["title"].value;
   const description = event.target.elements["editor1"].value;
-  c;
-
   if (title.match(textRegex)) {
     document.querySelector(".title_error").textContent = "";
     console.log(title);

@@ -29,9 +29,6 @@ const renderArticles = (articles) => {
     content.setAttribute("class", "content");
     const h3Content = document.createElement("h3");
     h3Content.textContent = article.title;
-    const date = document.createElement("div");
-    date.setAttribute("class", "published-date");
-    date.appendChild(date);
     const p = document.createElement("p");
     p.textContent = article.description;
     const anchor = document.createElement("a");
@@ -48,4 +45,10 @@ const renderArticles = (articles) => {
   }
 };
 
-renderArticles(articles);
+fetch("http://localhost:3001/api/article/", {})
+  .then((res) => res.json())
+  .then((data) => {
+    if (data.status === 200) {
+      renderArticles(data.data);
+    }
+  });
