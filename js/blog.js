@@ -45,7 +45,7 @@ const renderArticles = (articles) => {
   }
 };
 
-fetch("http://localhost:3001/api/article/", {})
+fetch("https://website-api-o6er.onrender.com/api/article/", {})
   .then((res) => res.json())
   .then((data) => {
     if (data.status === 200) {

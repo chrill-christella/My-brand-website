@@ -25,7 +25,7 @@ if (!isLoggedIn && !accessToken) {
   window.location.assign("/html/login.html");
 }
 
-fetch("http://localhost:3001/api/userMessages/", {
+fetch("https://website-api-o6er.onrender.com/api/userMessages/", {
   method: "GET",
   headers: {
     Authorization: `Bearer ${JSON.parse(localStorage.getItem("kiri"))}`,
@@ -34,7 +34,7 @@ fetch("http://localhost:3001/api/userMessages/", {
 })
   .then((response) => response.json())
   .then((data) => {
-    result = data.payload;
+    result = data.data;
     console.log(result);
     if (data.status === 200) {
       let tbody = document.querySelector("tbody");

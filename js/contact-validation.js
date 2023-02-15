@@ -108,7 +108,7 @@ function validate() {
     message: `${message}`,
   };
   console.log(query);
-  fetch("http://localhost:3001/api/userMessages", {
+  fetch("https://website-api-o6er.onrender.com/api/userMessages", {
     method: "POST",
     headers: { "Content-Type": "application/json" },
     body: JSON.stringify(query),

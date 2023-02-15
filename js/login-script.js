@@ -18,7 +18,7 @@ login.addEventListener("submit", (e) => {
   console.log(loginData);
   // if (isEmailValid && isPasswordValid) {
 
-  fetch("http://localhost:3001/api/user/signin", {
+  fetch("https://website-api-o6er.onrender.com/api/user/signin", {
     method: "POST",
     headers: { "Content-Type": "application/json" },
     body: JSON.stringify(loginData),
