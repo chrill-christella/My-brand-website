@@ -15,7 +15,9 @@ document.querySelector("#picture").addEventListener("change", function () {
   });
 });
 
+
 fetch("https://website-api-o6er.onrender.com/api/article/")
+
   .then((res) => res.json())
   .then((data) => {
     const articles = data.data;
@@ -86,6 +88,7 @@ document.querySelector("#add-blog").addEventListener("submit", (e) => {
   if (isInEditMode) {
     //const url = `https://localhost:3001/api/article/updateArticle/${articleId}`;
 
+
     fetch(
       `https://website-api-o6er.onrender.com/api/article/updateArticle/${articleId}`,
       {
@@ -97,6 +100,7 @@ document.querySelector("#add-blog").addEventListener("submit", (e) => {
         body: formData,
       }
     )
+
       .then((response) => response.json())
       .then((data) => {
         console.log(data.status);
@@ -104,12 +108,14 @@ document.querySelector("#add-blog").addEventListener("submit", (e) => {
           location.reload();
           alert("Blog updated Successfully");
           location.assign(`/html/viewblog.html?id=${articleId}`);
+
         } else {
           throw new Error(data.message);
         }
       })
       .catch((error) => console.error(error));
   } else {
+
     fetch("https://website-api-o6er.onrender.com/api/article", {
       method: "POST",
       headers: {
