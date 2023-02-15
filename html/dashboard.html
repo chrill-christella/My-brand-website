@@ -42,6 +42,12 @@
             </a>
           </li>
           <li>
+            <a href="./usermessages.html">
+              <!-- <span class="icon icon-4"><i class="ri-line-chart-line"></i></span> -->
+              <span class="sidebar--item">User messages</span>
+            </a>
+          </li>
+          <li>
             <a href="./addblog.html">
               <!-- <span class="icon icon-4"><i class="ri-line-chart-line"></i></span> -->
               <span class="sidebar--item">Add Blog</span>
@@ -56,7 +62,7 @@
                     </a>
                 </li> -->
           <li>
-            <a href="./../index.html">
+            <a href="./../login.html">
               <span class="icon icon-5"
                 ><i class="ri-logout-box-r-line"></i
               ></span>
@@ -71,20 +77,12 @@
         <div class="overview">
           <div class="title">
             <h2 class="section--title">Overview</h2>
-            <!-- <select name="date" id="date" class="dropdown">
-                        <option value="today">Today</option>
-                        <option value="lastweek">Last Week</option>
-                        <option value="lastmonth">Last Month</option>
-                        <option value="lastyear">Last Year</option>
-                        <option value="alltime">All Time</option>
-                    </select> -->
           </div>
-          <div class="cards">
+          <!-- <div class="cards">
             <div class="card card-1">
               <div class="card--data">
                 <div class="card--content">
                   <h5 class="card--title">Total Skills</h5>
-                  <h1>4</h1>
                 </div>
               </div>
             </div>
@@ -92,15 +90,45 @@
               <div class="card--data">
                 <div class="card--content">
                   <h5 class="card--title">Total Blogs</h5>
-                  <h1>12</h1>
                 </div>
               </div>
             </div>
-          </div>
+          </div> -->
         </div>
         <!-- End Overview -->
+        <!-- Start Blog  -->
+        <div class="recent--blogs">
+          <div class="title">
+            <h2 class="section--title">Blogs</h2>
+            <!-- <button class="add"><i class="ri-add-line"></i>Add Blog</button> -->
+          </div>
+          <div class="table">
+            <table>
+              <thead>
+                <tr>
+                  <th class="hidden">id</th>
+                  <th>Tittle</th>
+                  <th>Comments</th>
+                  <th>Likes</th>
+                  <th>Settings</th>
+                </tr>
+              </thead>
+              <tbody>
+                <!-- <tr>
+                        <td class="hidden"></td>
+                        <td>Why Lead Generation is Key for Business Growth</td>
+                        <td>30/07/2022</td>
+                        <td>12</td>
+                        <td><span><i class="ri-edit-line edit"></i><i class="ri-delete-bin-line delete"></i></span></td>
+                    </tr>                      -->
+              </tbody>
+            </table>
+          </div>
+        </div>
+
+        <!-- End Blog  -->
       </div>
     </section>
-    <script src="./../js/main.js"></script>
+    <script src="./../js/listblogs.js"></script>
   </body>
 </html>

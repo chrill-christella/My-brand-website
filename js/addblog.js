@@ -15,7 +15,9 @@ document.querySelector("#picture").addEventListener("change", function () {
   });
 });
 
-fetch("http://localhost:3001/api/article/")
+
+fetch("https://website-api-o6er.onrender.com/api/article/")
+
   .then((res) => res.json())
   .then((data) => {
     const articles = data.data;
@@ -86,28 +88,35 @@ document.querySelector("#add-blog").addEventListener("submit", (e) => {
   if (isInEditMode) {
     //const url = `https://localhost:3001/api/article/updateArticle/${articleId}`;
 
-    fetch(`http://localhost:3001/api/article/updateArticle/${articleId}`, {
-      method: "PATCH",
-      headers: {
-        Authorization: `Bearer ${JSON.parse(localStorage.getItem("kiri"))}`,
-      },
 
-      body: formData,
-    })
+    fetch(
+      `https://website-api-o6er.onrender.com/api/article/updateArticle/${articleId}`,
+      {
+        method: "PATCH",
+        headers: {
+          Authorization: `Bearer ${JSON.parse(localStorage.getItem("kiri"))}`,
+        },
+
+        body: formData,
+      }
+    )
+
       .then((response) => response.json())
       .then((data) => {
         console.log(data.status);
         if (data.status === 200) {
           location.reload();
           alert("Blog updated Successfully");
-          location.assign(`/html/viewblog.html?id=${articleID}`);
+          location.assign(`/html/viewblog.html?id=${articleId}`);
+
         } else {
           throw new Error(data.message);
         }
       })
       .catch((error) => console.error(error));
   } else {
-    fetch("http://localhost:3001/api/article", {
+
+    fetch("https://website-api-o6er.onrender.com/api/article", {
       method: "POST",
       headers: {
         Authorization: `Bearer ${JSON.parse(localStorage.getItem("kiri"))}`,

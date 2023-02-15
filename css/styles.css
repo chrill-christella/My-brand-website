@@ -73,10 +73,6 @@ img {
   margin: 2rem;
 }
 
-/* Start signin */
-
-/* Start signin */
-
 /* sidebar */
 
 .sidebar {
@@ -354,19 +350,25 @@ a {
 
 table {
   width: 100%;
-  /* text-align: left; */
+  text-align: left;
   border-collapse: collapse;
 }
 
 tr {
   border-bottom: 1px solid #f1f1f1;
+  border-spacing: 20px;
 }
 
 td,
 th {
   padding-block: 10px;
+  border-spacing: 10px;
 }
 
+td {
+  color: #000;
+  font-weight: 500;
+}
 .edit {
   color: #70d7a5;
   margin-right: 10px;
@@ -375,7 +377,11 @@ th {
 .delete {
   color: #e86786;
 }
-
+.picture {
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+}
 /* end recent blog */
 
 /* start of add blogs */
@@ -471,9 +477,16 @@ th {
   .main--content.active {
     width: calc(100% - 85px);
   }
+  .table {
+    width: 300px;
+    padding: 0px 50px;
+  }
 }
 
 @media screen and (max-width: 590px) {
+  .main--content {
+    width: 40%;
+  }
   .search,
   .lock,
   .chat {
@@ -486,7 +499,7 @@ th {
     width: fit-content;
   }
   .sidebar {
-    transform: translateX(-100%);
+    width: 30%;
     z-index: 10;
     background-color: #fff;
   }
@@ -497,11 +510,19 @@ th {
   .sidebar.active .sidebar--item {
     display: block;
   }
+  .sidebar--items a,
+  .sidebar--bottom-items a {
+    font-size: 0.5rem;
+  }
+
   .main--content {
-    width: calc(100% - 0px);
+    width: calc(100% - 100px);
   }
   .main--content.active {
     width: calc(100% - 0px);
+  }
+  .icon-1 {
+    display: none;
   }
 }
 
@@ -521,4 +542,38 @@ th {
   .sidebar {
     padding: 10px;
   }
+}
+.custom-file-input::-webkit-file-upload-button {
+  visibility: hidden;
+  margin: 10px 0px;
+}
+.custom-file-input::before {
+  content: " Picture";
+  display: inline-block;
+  background: black;
+  border: 1px solid black;
+  outline: none;
+  white-space: nowrap;
+  -webkit-user-select: none;
+  cursor: pointer;
+  padding: 8px;
+  color: white;
+  margin: 0px 20px;
+  font-weight: 400;
+  font-size: inherit;
+  text-align: center;
+}
+.custom-file-input:hover::before {
+  border-color: black;
+}
+.custom-file-input:active::before {
+  background: -webkit-linear-gradient(top, #e3e3e3, #f9f9f9);
+}
+
+input[type="file" i] {
+  width: 96%;
+  color: darkgray;
+}
+.hidden {
+  display: none;
 }

@@ -2,7 +2,7 @@
 <head>
     <title>login</title>
     <link rel="stylesheet" href="./../css/login/styles.css">
-    
+   
     <script src="https://code.iconify.design/iconify-icon/1.0.2/iconify-icon.min.js"></script>
 </a>
 </head>
@@ -12,19 +12,23 @@
         <div class="sign">
             <div class="icon">
                 <a href="./../index.html">
-                    <iconify-icon icon="material-symbols:arrow-back" style="color: black;" width="50" height="50"></iconify-icon>
+                    <iconify-icon icon="material-symbols:arrow-back" style="color:white;" width="50" height="50"></iconify-icon>
         </a>
         </div>
-            <form >
-                <label for="chk" aria-hidden="true">Log in</label>
-                <input type="text" name="txt" placeholder="User name" >
-                <input type="password" name="pswd" placeholder="Password" >
-                <a href="./dashboard.html"class="button">Log in</a>
-            </form>
+
+        <form  id="login" method="post" name="form">
+        <label>Log In</label>
+        <input type="text" id="input_email" name="email" placeholder="User name" class="username" >
+        <div class="email_error"></div>
+        <input type="password" id="input_password" name="password" placeholder="Password" class="pass password" >
+        <div class="password_error"></div>
+        <div class="form_error"></div>
+        <button type="submit" class="button">Log in</button>
+              
+    </form>
             
         </div>
-    
     </div>
-    
+    <script src="./../js/login-script.js"></script>
 </body>
 </html>
