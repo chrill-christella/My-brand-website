@@ -45,10 +45,10 @@ const renderArticles = (articles) => {
   }
 };
 
-fetch("https://website-api-o6er.onrender.com/api/article/", {})
-  .then((res) => res.json())
-  .then((data) => {
-    if (data.status === 200) {
-      renderArticles(data.data);
-    }
-  });
+// fetch("https://website-api-o6er.onrender.com/api/article/", {})
+//   .then((res) => res.json())
+//   .then((data) => {
+//     if (data.status === 200) {
+//       renderArticles(data.data);
+//     }
+//   });

@@ -18,30 +18,30 @@ login.addEventListener("submit", (e) => {
   console.log(loginData);
   // if (isEmailValid && isPasswordValid) {
 
-  fetch("https://website-api-o6er.onrender.com/api/user/signin", {
-    method: "POST",
-    headers: { "Content-Type": "application/json" },
-    body: JSON.stringify(loginData),
-  })
-    .then((response) => response.json())
-    .then((data) => {
-      console.log(data);
-      if (data.status === 200) {
-        const accessToken = data.payload.accessToken;
-        localStorage.setItem("kiri", JSON.stringify(accessToken));
-        localStorage.setItem("isLoggedIn", JSON.stringify(true));
-        window.location.assign("../html/dashboard.html");
-      } else {
-        throw new Error(data.message);
-      }
-    })
-    .catch((error) => {
-      console.log(error);
-      formError.textContent = error.message;
-      setTimeout(() => {
-        formError.textContent = "";
-      }, 5000);
-    });
+  // fetch("https://website-api-o6er.onrender.com/api/user/signin", {
+  //   method: "POST",
+  //   headers: { "Content-Type": "application/json" },
+  //   body: JSON.stringify(loginData),
+  // })
+  // .then((response) => response.json())
+  // .then((data) => {
+  //   console.log(data);
+  //   if (data.status === 200) {
+  //     const accessToken = data.payload.accessToken;
+  //     localStorage.setItem("kiri", JSON.stringify(accessToken));
+  //     localStorage.setItem("isLoggedIn", JSON.stringify(true));
+  //     window.location.assign("../html/dashboard.html");
+  //   } else {
+  //     throw new Error(data.message);
+  //   }
+  // })
+  // .catch((error) => {
+  //   console.log(error);
+  //   formError.textContent = error.message;
+  //   setTimeout(() => {
+  //     formError.textContent = "";
+  //   }, 5000);
+  // });
   // }
 });
 

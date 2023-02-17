@@ -753,7 +753,9 @@ textarea {
 }
 .box {
   display: flex;
-  flex-flow: column;
+  flex-flow: row;
+  flex-direction: row;
+  flex-wrap: wrap;
 }
 
 .heading {
@@ -769,7 +771,7 @@ textarea {
   display: flex;
   justify-content: center;
   gap: 2rem;
-  /* flex:1 1 0; */
+  flex: 1 1 0;
 }
 
 .blog .box-container .box:hover .image img {
@@ -783,14 +785,14 @@ textarea {
 .blog .box-container .box .image {
   height: 25rem;
   overflow: hidden;
-  /* position: relative; */
+  position: relative;
 }
 
 .blog .box-container .box .image img {
   height: 100%;
-  /* width: 100%; */
-  /* -o-object-fit: cover;
-  object-fit: cover; */
+  width: 100%;
+  -o-object-fit: cover;
+  object-fit: cover;
 }
 
 .blog .box-container .box .image h3 {
@@ -809,7 +811,7 @@ textarea {
 }
 
 .blog .box-container .box .content {
-  padding: 2rem;
+  padding: 1rem 0rem;
   width: 400px;
   background-color: #fff;
 }
@@ -823,9 +825,9 @@ textarea {
   padding: 1rem 0;
   line-height: 2;
   color: #777;
-  text-align: center;
+  text-align: justify;
   width: fit-content;
-  color: red;
+  /* color: red; */
 }
 
 .btn {
